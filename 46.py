@@ -11,4 +11,3 @@ class Solution:
         for x in range(len(nums)):
             self.backtrack(nums[:x]+nums[x+1:],path+[nums[x]])
 
-print(permute([1,2,3]))
