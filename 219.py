@@ -13,5 +13,4 @@ class Solution:
                     return True
         return False
 
-# print(Solution.containsNearbyDuplicate(nums = [1,2,3,1], k = 3))
 
