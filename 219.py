@@ -12,4 +12,3 @@ class Solution:
                 if nums[i] == nums[j] and abs(i - j) <= k and i != j:
                     return True
         return False
-
