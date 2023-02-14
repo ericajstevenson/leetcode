@@ -20,3 +20,12 @@ class Solution:
 # solution 2: use two pointers (more time efficient)
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
+        s,f = head, head # initiate slow and fast pointers at head
+        while f and f.next:
+            s = s.next
+            f = f.next.next
+            if s == f:
+                return True
+        return False # if we get to the end of the list, there is no cycle
+
+
