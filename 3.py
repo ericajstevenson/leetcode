@@ -12,9 +12,3 @@ class Solution:
             charSet.add(s[r]) # add newest char on to right
             longest_substring = max(longest_substring,len(charSet))
         return longest_substring
-
-
-
-
-
-
