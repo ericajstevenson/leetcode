@@ -13,12 +13,14 @@ class Solution:
                 threeSum = val + nums[l] + nums[r]
                 if threeSum == target:
                     return threeSum
-                elif abs(threeSum - target) < abs(closest - target):
+                if abs(threeSum - target) < abs(closest - target):
                     closest = threeSum
-                elif threeSum <= target:
+                if threeSum <= target:
                     l += 1
                     while nums[l] == nums[l-1] and l<r:
                         l += 1
+                else:
+                    r -= 1
         return closest
 
 
